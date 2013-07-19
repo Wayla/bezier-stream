@@ -1,0 +1,16 @@
+{
+  "name": "live-bezier",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "through": "~2.3.4",
+    "event-stream": "~3.0.16",
+    "d3": "~3.2.7"
+  }
+}
