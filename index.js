@@ -12,8 +12,6 @@ var livebezier = function(opts) {
 
   var svg = d3
     .select('body')
-    .append('div')
-      .attr('id', opts.id)
       .append('svg')
 
   svg
@@ -22,9 +20,6 @@ var livebezier = function(opts) {
     .attr('height', opts.clientHeight)
 
   var p = svg.append('path')
-  p.style('fill', 'none')
-  p.style('stroke', opts.lineColor)
-  p.style('stroke-width', opts.lineWidth)
 
   stream.vectors = []
 

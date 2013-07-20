@@ -5,8 +5,6 @@ var count = 0
 
 var opts = {
   id: 'test',
-  lineColor: '#68bef3',
-  lineWidth: '2px',
   domainWidth: 50,
   domainHeight: 1,
   clientWidth: 500,

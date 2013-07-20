@@ -17,9 +17,6 @@ should be arrays of x and y coordinates (`[x,y]`) or arrays of arrays of coordin
 var createBezierStream = require('bezier-stream')
 
 var opts = {
-  id: 'test',
-  lineColor: '#68bef3',
-  lineWidth: '2px',
   domainWidth: 50,
   domainHeight: 1,
   clientWidth: 500,
