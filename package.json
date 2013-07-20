@@ -1,16 +1,30 @@
 {
-  "name": "live-bezier",
-  "version": "0.0.0",
-  "description": "",
+  "name": "bezier-stream",
+  "version": "0.0.1",
+  "description": "Ultra simple streaming line graph",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "BSD",
+  "author": "hij1nx",
+  "license": "MIT",
   "dependencies": {
     "through": "~2.3.4",
     "event-stream": "~3.0.16",
     "d3": "~3.2.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Wayla/bezier-stream.git"
+  },
+  "keywords": [
+    "d3",
+    "bezier",
+    "streams",
+    "graphs"
+  ],
+  "bugs": {
+    "url": "https://github.com/Wayla/bezier-stream/issues"
   }
 }
