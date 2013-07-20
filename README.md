@@ -4,9 +4,11 @@ Ultra simple streaming line graph
 # DESCRIPTION
 Create a basis interpolated bezier path based on the data from a continious stream
 
+![example](/screenshot.png)
+
 # USAGE
 Create a writable stream, pass in some options and then write to the stream. Writes 
-should be arrays of x and y coordinates like `[x,y]` or batches of x and y coordinates.
+should be arrays of x and y coordinates (`[x,y]`) or arrays of arrays of coordinates (batches).
 
 # EXAMPLE
 
@@ -39,7 +41,6 @@ s.write([[17, 0.4], [18, 0.4], [35, 0.5], [40, 0.1]])
 ```
 
 ## Output
-[example](/screenshot.png)
 
 Below is the actual data read from the stream's last data event. You could read this and overwrite an existing
 path inside an `svg` fragment on the client.
