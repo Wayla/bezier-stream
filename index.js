@@ -64,7 +64,7 @@ var livebezier = function(opts) {
       )
     ;
 
-    this.queue(d3.select('body').node().innerHTML)
+    this.queue(d3.select('svg').node().innerHTML)
   }
 
   return stream
