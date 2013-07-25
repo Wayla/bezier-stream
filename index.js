@@ -10,6 +10,9 @@ var livebezier = function(opts) {
   var stream = new Stream
   stream.writable = true
 
+  opts.domainWidthStart = opts.domainWidthStart || 0
+  opts.domainHeightStart = opts.domainHeightStart || 0
+
   var svg = d3
     .select('body')
       .append('svg')
@@ -37,14 +40,14 @@ var livebezier = function(opts) {
     var x = d3
       .scale
       .linear()
-      .domain([0, opts.domainWidth])
+      .domain([opts.domainWidthStart, opts.domainWidthStart + opts.domainWidth])
       .range([0, opts.clientWidth])
     ;
 
     var y = d3
       .scale
       .linear()
-      .domain([0, opts.domainHeight])
+      .domain([opts.domainHeightStart, opts.domainHeightStart + opts.domainHeight])
       .range([opts.clientHeight, 0])
     ;
 

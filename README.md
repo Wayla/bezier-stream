@@ -19,6 +19,8 @@ var createBezierStream = require('bezier-stream')
 var opts = {
   domainWidth: 50,
   domainHeight: 1,
+  domainWidthStart: 0, //optional, default: 0
+  domainHeightStart: 0, //optional, default: 0
   clientWidth: 500,
   clientHeight: 100,
 }
