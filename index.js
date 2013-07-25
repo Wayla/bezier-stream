@@ -24,7 +24,8 @@ var livebezier = function(opts) {
   stream.vectors = []
 
   function write(data) {
-
+    data = data || []
+ 
     if (typeof data[0] !== 'number') {
       for (var i = 0, l = data.length; i < l; i++) {
         stream.vectors.push(data[i])
@@ -33,7 +34,7 @@ var livebezier = function(opts) {
     else {
       stream.vectors.push(data)
     }
-
+ 
     var x = d3
       .scale
       .linear()
@@ -62,7 +63,9 @@ var livebezier = function(opts) {
     this.queue(d3.select('path').attr('d'))
   }
   var ts = through(write)
+
   ts.vectors = stream.vectors
+  ts.write = write
 
   return stream
     .pipe(parse())
