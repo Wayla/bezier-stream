@@ -65,7 +65,7 @@ var livebezier = function(opts) {
   var ts = through(write)
 
   ts.vectors = stream.vectors
-  ts.write = write
+  ts.draw = write
 
   return stream
     .pipe(parse())
